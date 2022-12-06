@@ -13,7 +13,7 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -437,6 +437,7 @@ body {
   padding: 0px;
   text-decoration: none;
 }
+
 .benefits__icon {
   display: flex;
   background-color: var(--background-secondary-color);
@@ -449,11 +450,13 @@ body {
   width: 270px;
   align-items: center;
 }
+
 .benefits__icon-svg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .benefits__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -463,6 +466,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .benefits__text {
   margin-top: 0;
   margin-bottom: 0;
