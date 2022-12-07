@@ -2,12 +2,19 @@
   font-size: 0;
 }
 .benefits {
-  display: flex;
+  // display: flex;
   gap: 30px;
   list-style: none;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+}
+.benefits__item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.benefits__item:last-child {
+  margin-bottom: 0px;
 }
 .benefits__icon {
   display: flex;
@@ -18,7 +25,7 @@
   padding-bottom: 25px;
   margin-bottom: 30px;
   height: 120px;
-  width: 270px;
+  width: 100%;
   align-items: center;
 }
 
@@ -36,6 +43,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .benefits__text {
