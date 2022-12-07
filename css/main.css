@@ -19,7 +19,8 @@ img, svg {
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
