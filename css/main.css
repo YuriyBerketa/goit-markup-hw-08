@@ -722,26 +722,34 @@ body {
   display: flex;
 }
 
-.client {
-  padding-bottom: 0;
-}
 .client-text {
   color: var(--first-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .client-text {
+    font-size: 36px;
+  }
+}
+
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   padding: 0;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 92px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .client-list {
+    margin-top: 50px;
+  }
 }
 
 .client-list__item {
-  margin-right: 30px;
   list-style: none;
 }
 .client-list__item:last-child {
