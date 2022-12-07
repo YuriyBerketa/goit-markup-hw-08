@@ -8,11 +8,24 @@
   list-style: none;
   margin: 0px;
   padding: 0px;
-  text-decoration: none;
-}
+  @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+
 .benefits__item {
   width: 100%;
   margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+        margin-bottom: 0px;
+      }
+
+            @media screen and (min-width: 1200px) {
+              width: calc((100% - 90px) / 4);
+            }
 }
 .benefits__item:last-child {
   margin-bottom: 0px;
