@@ -34,11 +34,6 @@ img, svg {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -194,29 +189,41 @@ body {
 .hero {
   background-color: var(--background-footer-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  height: 600px;
-  max-width: 1600px;
   margin: auto;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+}
+
 .hero__title {
   color: var(--main-color);
   margin-top: auto;
   margin-bottom: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 
 .button-studio {
@@ -228,7 +235,7 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
+  padding: 10px 24px;
   margin-top: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
