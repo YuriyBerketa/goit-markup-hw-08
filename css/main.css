@@ -442,6 +442,7 @@ body {
 }
 
 .benefits {
+  display: block;
   gap: 30px;
   list-style: none;
   margin: 0px;
