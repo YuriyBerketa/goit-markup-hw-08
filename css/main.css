@@ -541,7 +541,13 @@ body {
 }
 
 .portfolio {
+  display: none;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    display: inline;
+  }
 }
 
 .portfolio__title {
@@ -550,6 +556,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .portfolio__list {
