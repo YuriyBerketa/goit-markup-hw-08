@@ -10,6 +10,7 @@
 
 .header-nav__logo {
 margin: 16px 0px;
+width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -24,6 +25,9 @@ justify-content: space-between;
   font-size: 24px;
     line-height: 1.174;
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+      margin-right: 87px;
+    }
 }
 
 .studio {
@@ -39,12 +43,14 @@ justify-content: space-between;
 
 
 .mobile-button {
-  display: flex;
   margin: 0;
   padding: 0;
   border: 0;
   background-color: transparent;
-  justify-content: flex-end;
+
+  @media screen and (min-width: 768px) {
+      display: none;
+    }
 }
 
 .mobile-button .icon-cross {
@@ -73,6 +79,7 @@ display: block;
   text-decoration: none;
   @media screen and (min-width: 768px) {
       display: flex;
+      gap: 50px;
     }
 }
 
@@ -108,14 +115,16 @@ display: block;
   }
 }
 
-.site-nav__item {
-  margin-right: 50px;
+// .site-nav__item {
+//   margin-right: 50px;
 
-  &:last-child {
-    margin-right: 0;
-  }
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+.site-nav__item:last-child {
+  margin-right: 96px;
 }
-
 .link.current {
   color: var(--third-color);
 }
@@ -137,23 +146,31 @@ display: block;
 
 .contact-nav {
   display: none;
-  margin-left: auto;
+  // margin-left: auto;
   align-items: center;
 
   color: var(--secondary-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.02em;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
+  
 
   @media screen and (min-width: 768px) {
       display: flex;
+      
+
     }
 }
 
 .contact-nav__item {
-  margin-left: 50px;
+  // margin-left: 50px;
   list-style: none;
+  display: flex;
+  width: 138px;
 
   &:first-child {
     margin-left: 0;
@@ -172,6 +189,7 @@ display: block;
 }
 
 .contact-nav__icon-margin {
+  width: 100%;
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

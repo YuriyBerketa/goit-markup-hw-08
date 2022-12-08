@@ -73,6 +73,7 @@ body {
 
 .header-nav__logo {
   margin: 16px 0px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,6 +87,11 @@ body {
   line-height: 1.174;
   text-decoration: none;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 87px;
+  }
+}
 
 .studio {
   color: var(--fourth-color);
@@ -97,12 +103,15 @@ body {
 }
 
 .mobile-button {
-  display: flex;
   margin: 0;
   padding: 0;
   border: 0;
   background-color: transparent;
-  justify-content: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .mobile-button {
+    display: none;
+  }
 }
 
 .mobile-button .icon-cross {
@@ -131,6 +140,7 @@ body {
 @media screen and (min-width: 768px) {
   .site-nav__list {
     display: flex;
+    gap: 50px;
   }
 }
 
@@ -159,11 +169,8 @@ body {
   color: var(--third-color);
 }
 
-.site-nav__item {
-  margin-right: 50px;
-}
 .site-nav__item:last-child {
-  margin-right: 0;
+  margin-right: 96px;
 }
 
 .link.current {
@@ -186,13 +193,15 @@ body {
 
 .contact-nav {
   display: none;
-  margin-left: auto;
   align-items: center;
   color: var(--secondary-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.02em;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .contact-nav {
@@ -201,8 +210,9 @@ body {
 }
 
 .contact-nav__item {
-  margin-left: 50px;
   list-style: none;
+  display: flex;
+  width: 138px;
 }
 .contact-nav__item:first-child {
   margin-left: 0;
@@ -218,6 +228,7 @@ body {
 }
 
 .contact-nav__icon-margin {
+  width: 100%;
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -239,6 +250,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-size: 1600px 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -264,7 +276,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    max-width: 696px;
+    max-width: 1600px;
     font-size: 44px;
     line-height: 1.363;
   }

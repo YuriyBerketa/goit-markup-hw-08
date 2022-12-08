@@ -20,6 +20,7 @@
       background-size: cover;
     }
                  @media screen and (min-width: 1200px) {
+                  background-size: 1600px 600px;
                   padding-top: 200px;
                     padding-bottom: 200px;
                  }
@@ -44,7 +45,7 @@
       margin-left: auto;
     }
         @media screen and (min-width: 1200px) {
-          max-width: 696px;
+          max-width: 1600px;
           font-size: 44px;
             line-height: 1.363;
         }
