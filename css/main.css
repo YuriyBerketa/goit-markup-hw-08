@@ -21,6 +21,7 @@ img, svg {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  min-width: 300px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -318,7 +319,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    max-width: 1600px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.363;
   }
@@ -677,6 +678,7 @@ body {
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+  margin-bottom: 94px;
 }
 
 .portfolio__item {
@@ -896,11 +898,12 @@ body {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-contact {
-  width: 231px;
+.footer-logo {
+  text-align: center;
 }
 
 .studio-footer {
@@ -908,13 +911,15 @@ body {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.174;
 }
 
 .address__list {
   margin-top: 20px;
+  margin-bottom: 60px;
   padding-left: 0;
+  text-align: center;
 }
 .address__link > .address__list {
   margin-top: 20px;
@@ -956,12 +961,12 @@ body {
 
 .footer-messenger {
   display: flex;
-  margin-left: 70px;
 }
 
 .footer-social {
   text-align: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .footer-messenger__text {
@@ -969,8 +974,8 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
-  text-align: left;
+  line-height: 1.172;
+  text-align: center;
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1013,7 +1018,8 @@ body {
 
 .subscribe {
   margin: 0;
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe__text {
@@ -1021,8 +1027,8 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
-  text-align: left;
+  line-height: 1.172;
+  text-align: center;
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1030,11 +1036,13 @@ body {
 
 .subscribe__form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscribe__label {
-  margin-right: 12px;
   display: flex;
+  margin-bottom: 20px;
 }
 .subscribe__label::-moz-placeholder {
   color: var(--footer-mail-tel-color);
@@ -1053,7 +1061,8 @@ body {
   color: var(--main-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
+  height: 50px;
   padding: 0px 16px;
   font-style: normal;
   font-weight: 400;
@@ -1066,7 +1075,7 @@ body {
 }
 
 .subscribe__button {
-  min-width: 200px;
+  max-width: 200px;
   border: 0px;
   border-radius: 4px;
   background-color: var(--third-color);
