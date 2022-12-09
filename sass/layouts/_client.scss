@@ -40,6 +40,7 @@
 .client-list__link {
   display: flex;
   width: 170px;
+  
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -55,6 +56,11 @@
     fill: var(--third-color);
     border: 1px solid #2196f3;
   }
+
+    @media screen and (min-width: 768px) {
+    width: 100%;
+      padding: 14px 58px;
+    }
 }
 
 .client-list__icon {
