@@ -15,7 +15,7 @@
   @media screen and (min-width: 768px) {
       display: flex;
       align-items: baseline;
-      // justify-content: space-around;
+      justify-content: space-around;
     }
 }
 
@@ -192,6 +192,10 @@
   &::placeholder {
     color: var(--footer-mail-tel-color);
   }
+     @media screen and (min-width: 768px) {
+      //  text-align: center;
+      // margin-right: auto;
+     }
 }
 
 .subscribe__input {
@@ -203,10 +207,11 @@
   border-radius: 4px;
   // width: 358px;
   width: 100%;
-  max-width: 450px;
+  // max-width: 450px;
 
   height: 50px;
-
+margin-left: auto;
+margin-right: auto;
   padding: 0px 16px;
   font-style: normal;
   font-weight: 400;
@@ -218,6 +223,11 @@
   &:hover {
     border-color: #2196f3;
   }
+
+     @media screen and (min-width: 768px) {
+       max-width: 450px;
+       
+     }
 }
 
 .subscribe__button {

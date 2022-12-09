@@ -910,6 +910,7 @@ body {
   .footer-tablet {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 
@@ -1054,7 +1055,6 @@ body {
 .subscribe__label::placeholder {
   color: var(--footer-mail-tel-color);
 }
-
 .subscribe__input {
   outline: 0;
   background-color: transparent;
@@ -1062,8 +1062,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 100%;
-  max-width: 450px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px 16px;
   font-style: normal;
   font-weight: 400;
@@ -1073,6 +1074,11 @@ body {
 }
 .subscribe__input:focus, .subscribe__input:hover {
   border-color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    max-width: 450px;
+  }
 }
 
 .subscribe__button {
