@@ -1077,7 +1077,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .subscribe__input {
+    display: flex;
     max-width: 450px;
+    justify-content: center;
   }
 }
 
