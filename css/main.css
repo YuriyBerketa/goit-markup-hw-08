@@ -156,6 +156,13 @@ body {
   height: 100vh;
   background-color: var(--main-color);
 }
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
 @media screen and (min-width: 768px) {
   .mob-menu {
     display: none;

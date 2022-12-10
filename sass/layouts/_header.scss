@@ -89,12 +89,19 @@ padding: 0;
 width: 100vw;
 height: 100vh;
 background-color:var(--main-color);
+
+> .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
   @media screen and (min-width: 768px) {
       display: none;
     }
 }
 
-.icon-cross {}
 
 .menu-list {
   margin: 0;
@@ -145,9 +152,7 @@ background-color:var(--main-color);
   color: var(--secondary-color);
 }
 
-.contact-nav__icon {}
 
-.mob-menu__icon {}
 
 .mob-soc {
   list-style: none;
