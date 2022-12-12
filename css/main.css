@@ -123,6 +123,10 @@ body {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .menu-open {
   margin: 0;
   padding: 0;

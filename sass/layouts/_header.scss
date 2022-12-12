@@ -55,7 +55,9 @@ justify-content: space-between;
 
 
 //mobile menu//
-
+.no-scroll {
+  overflow: hidden;
+}
 
 .menu-open {
   margin: 0;

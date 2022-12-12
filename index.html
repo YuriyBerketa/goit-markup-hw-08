@@ -214,14 +214,11 @@
                 <picture>
                   <source
                   srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpg 2x"
-                  @media="(min-width: 1200px)"/>
+                  media="(min-width: 1200px)"
+                  />
+                  <img src="./images/photo1-2x.jpg" alt="tablet keyboard glasses" width="370" height="294" />
                 </picture>
-                <img
-                  src="./images/photo1-2x"
-                  alt="tablet keyboard glasses"
-                  width="370"
-                  height="294"
-                />
+                
                 <div class="caption__title">
                   <h3>Десктопні додатки</h3>
                 </div>
@@ -229,12 +226,12 @@
             </li>
             <li class="portfolio__item">
               <div class="caption">
-                <img
-                  src="./images/photo1.jpg"
-                  alt="phone laptop"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source srcset="./images/photo2.jpg 1x, ./images/photo2-2x.jpg 2x" media="(min-width: 1200px)"
+                  />
+                  <img src="./images/photo2-2x.jpg" alt="phone laptop" width="370" height="294" />
+                </picture>
+                
                 <div class="caption__title">
                   <h3>Мобільні додатки</h3>
                 </div>
@@ -242,12 +239,11 @@
             </li>
             <li class="portfolio__item">
               <div class="caption">
-                <img
-                  src="./images/photo3.jpg"
-                  alt="tablet"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source srcset="./images/photo3.jpg 1x, ./images/photo3-2x.jpg 2x" media="(min-width: 1200px)"
+                  />
+                  <img src="./images/photo3-2x.jpg" alt="tablet" width="370" height="294" />
+                </picture>
                 <div class="caption__title">
                   <h3>Дизайнерські рішення</h3>
                 </div>
@@ -262,12 +258,16 @@
           <ul class="team-list">
             <li class="team-list__item">
               <div class="team-list__card">
-                <img
-                  class="team-list__jpg"
-                  src="./images/tim1.jpg"
-                  alt="IgorDem`yanenko"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./images/tim1-desc.jpg 1x, ./images/tim1-desc-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/tim1-tab.jpg 1x, ./images/tim1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/tim1-mob.jpg 1x, ./images/tim1-mob-2x.jpg 2x"
+                  media="(man-width: 768x)"/>
+                  <img class="team-list__jpg" src="./images/tim1-mob-2x.jpg" alt="IgorDem`yanenko" width="460"  />
+                </picture>
+                
                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
                 <p class="team-list__title">Product Designer</p>
 
