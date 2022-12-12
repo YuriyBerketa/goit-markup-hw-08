@@ -211,8 +211,13 @@
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <div class="caption">
+                <picture>
+                  <source
+                  srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpg 2x"
+                  @media="(min-width: 1200px)"/>
+                </picture>
                 <img
-                  src="./images/photo2.jpg"
+                  src="./images/photo1-2x"
                   alt="tablet keyboard glasses"
                   width="370"
                   height="294"
