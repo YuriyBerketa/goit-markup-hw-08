@@ -211,7 +211,6 @@ body {
 
 .menu-list__item {
   list-style: none;
-  margin-right: 40px;
 }
 
 .menu-list__item:not(:last-child) {
@@ -229,7 +228,6 @@ body {
 .mob-menu__contact {
   margin: 0;
   padding: 0;
-  margin-right: 40px;
 }
 
 .mob-menu__item {

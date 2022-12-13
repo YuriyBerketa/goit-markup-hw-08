@@ -128,7 +128,6 @@ background-color:var(--main-color);
 
 .menu-list__item {
   list-style: none;
-  margin-right: 40px;
 }
 .menu-list__item:not(:last-child) {
   margin-bottom: 32px;
@@ -145,7 +144,7 @@ background-color:var(--main-color);
 .mob-menu__contact {
   margin: 0;
   padding: 0;
-  margin-right: 40px;
+
 }
 
 .mob-menu__item {
