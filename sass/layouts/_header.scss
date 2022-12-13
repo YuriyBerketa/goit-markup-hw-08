@@ -81,7 +81,7 @@ justify-content: space-between;
   border: 0;
   right: 8px;
   top: 8px;
-  
+
   
   
  margin-left: auto;
@@ -106,7 +106,7 @@ width: 100vw;
 height: 100vh;
 background-color:var(--main-color);
 
-> .container {
+> .container-menu {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -162,11 +162,10 @@ background-color:var(--main-color);
     letter-spacing: 0.02em;
     color: var(--third-color);
 
-    @media screen and (max-width: 389px) {
+    @media screen and (max-width: 447px) {
       font-size: 24px;
       line-height: calc(28/24);
-      
-    }
+      }
 }
 .mob-menu__link-email {
     font-weight: 500;
