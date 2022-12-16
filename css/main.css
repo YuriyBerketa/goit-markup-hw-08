@@ -1414,8 +1414,14 @@ body {
 }
 
 .sort-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .sort-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .main-portfolio {
@@ -1424,11 +1430,30 @@ body {
 
 .sorting-button {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
   list-style: none;
   text-decoration: none;
+  padding: 0;
+  margin-top: 0;
+}
+@media screen and (max-width: 767px) {
+  .sorting-button {
+    max-width: 340px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sorting-button {
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sorting-button {
+    margin-bottom: 50px;
+  }
 }
 
 .sorting-button__link {
