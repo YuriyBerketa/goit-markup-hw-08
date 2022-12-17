@@ -1,6 +1,4 @@
 .sort-section {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
@@ -84,22 +82,32 @@ margin-bottom: 40px;
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
-
   list-style: none;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
-  // gap: 30px;
+  gap: 30px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 }
 
 .portfolio-cards__item {
-  width: 370px;
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  flex-basis: calc((100% - 60px) / 3);
+ 
+  @media screen and (min-width: 768px) {
+      display: flex;
+        flex-direction: column;
+        flex-basis: calc((100% - 30px) / 2);
+    }
+        @media screen and (min-width: 1200px) {
+          flex-basis: calc((100% - 60px) / 3);
+        }
+    
 
   &:hover,
   &:focus {

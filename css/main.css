@@ -1492,16 +1492,31 @@ body {
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+  gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-cards {
+    flex-direction: row;
+  }
 }
 
 .portfolio-cards__item {
-  width: 370px;
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  flex-basis: calc((100% - 60px) / 3);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-cards__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-cards__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .portfolio-cards__item:hover, .portfolio-cards__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
