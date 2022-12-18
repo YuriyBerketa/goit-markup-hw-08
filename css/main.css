@@ -1564,6 +1564,7 @@ body {
   border-left: 1px solid var(--port-border-color);
   border-right: 1px solid var(--port-border-color);
   border-bottom: 1px solid var(--port-border-color);
+  flex-grow: 1;
 }
 
 .portfolio-cards__title {
